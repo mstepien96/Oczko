@@ -52,6 +52,7 @@ class Player:
         self.hand.append(card)
 
     def count_points(self):
+        self.points = 0
         for card in self.hand:
             self.points += Oczko.values[card.rank]
 
